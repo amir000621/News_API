@@ -4,7 +4,7 @@ function Navbar() {
 
   return (
    <div>
-   <nav className="navbar navbar-expand-lg bg-body-tertiary">
+   <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
     <Link className="navbar-brand" to="/">Navbar</Link>
     {/* when my this button navabr toggler icon(for three lines in the corner) i have to attach a # at navbarSupportedContent and also do npm i bootstrap with two imports in index.js */}

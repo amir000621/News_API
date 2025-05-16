@@ -9,6 +9,7 @@ import {
   Route
 } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
+import ScrollToTop from './ScrollToTop';
 
 
 export default class App extends Component {
@@ -29,6 +30,7 @@ export default class App extends Component {
       
       <Router>
         <Navbar/>
+        <ScrollToTop/>
         <LoadingBar
         color="red"
         progress={this.state.progress}

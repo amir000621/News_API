@@ -48,7 +48,7 @@ export default class News extends Component {
        this.props.setProgress(30);
       let parsedData = await data.json();// convert to json for better understandings 
        this.props.setProgress(70)
-      console.log(parsedData);
+     // console.log(parsedData);
       this.setState({articles: parsedData.articles,
       totalResults:parsedData.totalResults,
       loading:false,
@@ -103,7 +103,7 @@ export default class News extends Component {
   render() {
     return (
         <>
-        <h2 className='my-3 text-center'>Daily-News -- Top Headlines</h2>
+        <h2 className='text-center' style={{marginTop:'80px'}}>Daily-News -- Top Headlines</h2>
         {/* this line says if loading is true then show spinner */}
     {this.state.loading && <Spinner/>} 
    
